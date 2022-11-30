@@ -15,6 +15,10 @@ h1 {
 
 .form-container {
     text-align: center;
+    border: .01px solid rgba(212, 212, 209, 0.9);
+    border-radius: .5rem;
+    margin: 2% 10%;
+    background-color: #ffe;
 }
 
 .email.container {
@@ -53,4 +57,15 @@ fieldset {
 .container {
     position: relative;
     margin-top: 1rem;
+}
+
+input {
+    padding: .2rem;
+}
+
+button {
+    margin: 1rem 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--form-color);
 }

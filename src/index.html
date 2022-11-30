@@ -10,15 +10,16 @@
 
 <body>
 
-    <h1> Sign Up form </h1>
+
     <div class="form-container">
+        <h1> Sign Up form </h1>
 
         <form action="#" method="post">
             <fieldset>
                 <legend>Personnal informations</legend>
                 <div class="email container">
-                    <label for="email"> Email </label>
-                    <input type="email" id="email" aria-label="email" name="email">
+                    <label for="email"> Email *</label>
+                    <input type="email" id="email" aria-label="email" name="email" required>
                 </div>
 
                 <div class="country container">
@@ -35,15 +36,16 @@
             <fieldset>
                 <legend> Security</legend>
                 <div class="password container">
-                    <label for="password"> Password</label>
-                    <input type="text" aria-label="password" name="password" id="password">
+                    <label for="password"> Password *</label>
+                    <input type="text" aria-label="password" name="password" id="password" required>
                 </div>
                 <div class="password-confirmation container">
-                    <label for="confirmation"> Confirm</label>
+                    <label for="confirmation"> Confirm *</label>
                     <input type="text" aria-label="password confirmation" placeholder="confirm your password"
-                        name="confirmation" id="confirmation">
+                        name="confirmation" id="confirmation" required>
                 </div>
             </fieldset>
+            <button type="submit"> Submit</button>
         </form>
     </div>
 
