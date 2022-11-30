@@ -1,4 +1,38 @@
+:root {
+    --form-color: #987;
+}
+
 * {
     user-select: none;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: var(--form-color);
+}
+
+.form-container {
+    text-align: center;
+}
+
+.email-container {
+    position: relative;
+}
+
+.email-container>label {
+    position: absolute;
+    color: var(--form-color);
+    z-index: 1;
+    font-size: .7rem;
+    top: -.5rem;
+    margin-left: .4rem;
+    padding: 0 .2rem 0 .2rem;
+    background-color: white;
+
+}
+
+#email {
+    position: relative;
 }

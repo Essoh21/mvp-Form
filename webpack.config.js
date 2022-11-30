@@ -27,6 +27,12 @@ module.exports = {
         ]
     },
 
+    devServer: {
+        static: path.resolve(__dirname, 'dist'),
+        open: true,
+        hot: true
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '/src/index.html'),
