@@ -17,11 +17,11 @@ h1 {
     text-align: center;
 }
 
-.email-container {
+.email.container {
     position: relative;
 }
 
-.email-container>label {
+label {
     position: absolute;
     color: var(--form-color);
     z-index: 1;
@@ -35,4 +35,22 @@ h1 {
 
 #email {
     position: relative;
+}
+
+fieldset {
+    margin: 0 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--form-color);
+    border-radius: .3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    margin-top: 1rem;
 }
