@@ -1,5 +1,6 @@
 :root {
     --form-color: #987;
+    --error-container-background: #900;
 }
 
 * {
@@ -8,17 +9,23 @@
     font-family: sans-serif;
 }
 
-h1 {
+h3 {
     text-align: center;
     color: var(--form-color);
 }
 
 .form-container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     border: .01px solid rgba(212, 212, 209, 0.9);
     border-radius: .5rem;
     margin: 2% 10%;
     background-color: #ffe;
+}
+
+form {
+    text-align: center;
 }
 
 .email.container {
@@ -42,10 +49,8 @@ label {
 }
 
 fieldset {
-    margin: 0 20%;
-    text-align: center;
+    margin: 0 2%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     color: var(--form-color);
@@ -57,10 +62,41 @@ fieldset {
 .container {
     position: relative;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
     padding: .2rem;
+    opacity: .4;
+    width: 10rem;
+}
+
+input:focus {
+    border: 1px solid #55f;
+    outline: none;
+    opacity: 1;
+    color: var(--form-color);
+}
+
+input:valid {
+    border: 2px solid green;
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid var(--error-container-background);
+}
+
+input:invalid>span {
+    padding: 0;
+}
+
+.message {
+    color: #efe;
+    background-color: var(--error-container-background);
+    font-size: .6rem;
+    width: 10rem;
 }
 
 button {
